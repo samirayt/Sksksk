@@ -52,7 +52,7 @@ Balls.ChildAdded:Connect(function(Ball)
 			end
 		end
 		
-		if (tick() - OldTick >= 1/60) then -- Don't want it to update too quickly because my velocity implementation is aids. Yes, I tried Ball.Velocity. No, it didn't work.
+		if (tick() - OldTick >= 1/36) then -- Don't want it to update too quickly because my velocity implementation is aids. Yes, I tried Ball.Velocity. No, it didn't work.
 			OldTick = tick()
 			OldPosition = Ball.Position
 		end
